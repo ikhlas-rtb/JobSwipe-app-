@@ -1,12 +1,11 @@
-# Node / JavaScript
-# node_modules (global) et logs
+# Node
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Environnements (ne pas commiter les secrets)
+# Env
 .env
 .env.*.local
 .env.local
@@ -14,7 +13,7 @@ pnpm-debug.log*
 .env.test.local
 .env.production.local
 
-# Build / artefacts
+# Build
 dist/
 build/
 out/
@@ -28,7 +27,7 @@ coverage/
 coverage-final.json
 nyc_output/
 
-# Logs & processus
+# Logs&&processus
 logs
 *.log
 pids
@@ -37,12 +36,11 @@ pids
 *.pid.lock
 
 # Docker
-# fichiers d'environnement locaux pour docker-compose, images temporaires
 docker-compose.override.yml
 docker-compose.*.yml
 *.dockerignore
 
-# Backend / Frontend per-directory ignores (si des node_modules locaux existent)
+# BE / FE
 backend/node_modules/
 backend/dist/
 backend/build/
@@ -53,7 +51,7 @@ frontend/dist/
 frontend/build/
 frontend/.env
 
-# Database dumps / DB files (ne pas versionner les dumps/binaires)
+# Database dumps
 database/*.sqlite
 database/*.db
 database/*.sql
@@ -83,6 +81,3 @@ desktop.ini
 *.log.*
 *.tmp
 *.temp
-
-# Keep lockfiles (package-lock.json / yarn.lock) under version control,
-# do not ignore them here (important for reproducible installs).
